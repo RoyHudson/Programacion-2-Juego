@@ -55,7 +55,8 @@ public class MenuState extends GameState
 		// draw title
 		g.setColor(titleColor);
 		g.setFont(titleFont);
-		g.drawString("Dragon Tale", 80, 70);
+		g.drawString("Rathalos ", 103, 80);
+		g.drawString("UIP", 05, 230);
 		
 		//draw menu options
 		g.setFont(font);
