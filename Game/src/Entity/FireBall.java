@@ -38,7 +38,7 @@ public class FireBall extends MapObject
 		// load sprites
 		try
 		{
-			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Player/fireball.gif"));
+			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Sprites.Player/fireball.gif"));
 			sprites = new BufferedImage[4];
 			for(int i = 0; i < sprites.length; i++)
 			{

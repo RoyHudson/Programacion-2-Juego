@@ -7,6 +7,7 @@ import Main.GamePanel;
 import TileMap.Tile;
 import TileMap.TileMap;
 
+
 public abstract class MapObject 
 {
 	// tile stuff

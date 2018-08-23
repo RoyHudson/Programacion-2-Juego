@@ -17,6 +17,7 @@ public class Player extends MapObject
 	private int maxHealth;
 	private int fire;
 	private int maxFire;
+	private int dead;
 	private boolean flinching;
 	private long flinchTimer;
 	
@@ -79,7 +80,7 @@ public class Player extends MapObject
 		// load sprites
 		try 
 		{
-			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Player/playersprites.gif"));
+			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Sprites.player/playersprites.gif"));
 			sprites = new ArrayList<BufferedImage[]>();
 			for(int i = 0; i < 7; i++)
 			{

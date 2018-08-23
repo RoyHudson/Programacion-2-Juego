@@ -38,7 +38,7 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
 	public void addNotify() 
 	{
 		super.addNotify();
-		if (thread != null)
+		if (thread == null)
 		{
 			thread = new Thread(this);
 			addKeyListener (this);
@@ -69,9 +69,9 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
 		while(running)
 		{
 			start = System.nanoTime();	
-			update();
-			draw();
-			drawToScreen();
+			update ();
+			draw ();
+			drawToScreen ();
 			
 			elapsed = System.nanoTime() - start;
 			

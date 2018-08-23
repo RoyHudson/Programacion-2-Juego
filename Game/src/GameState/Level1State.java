@@ -4,7 +4,6 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
-
 import Entity.Enemy;
 import Entity.Explosion;
 import Entity.HUD;
@@ -41,7 +40,7 @@ public class Level1State extends GameState
 		tileMap.setTween(0.07);
 		
 		
-		bg = new Background("/Backgrounds/grassbg1.gif", 0.1);
+		bg = new Background("/Background/grassbg1.gif", 0.1);
 		
 		player = new Player(tileMap);
 		player.setPosition(100, 100);
